@@ -14,10 +14,11 @@ public class largest {
         ch.second=input.nextInt();
         System.out.println("enter third a number");
         ch.third=input.nextInt();
-        if (ch.first> ch.second){
+        if (ch.first> ch.second & ch.first> ch.third){
             System.out.println(ch.first);
-        }
-        else {
+        } else if (ch.first> ch.second & ch.first< ch.third) {
+            System.out.println(ch.third);
+        } else {
             System.out.println(ch.second);
         }
 
